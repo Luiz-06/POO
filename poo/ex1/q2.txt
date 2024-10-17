@@ -1,0 +1,21 @@
+ex : class Pessoa {
+    private nome: string;  
+    private idade: number; 
+    private sono: boolean;  
+
+    public darNome(nome: string) {
+        this.nome = nome;
+    }
+
+    public suaIdade(idade : number) {
+        this.idade = idade;
+    }
+
+    public senteSono(): boolean {
+        return this.sono;
+    }
+}
+
+
+Atributos - > características de um objeto, esse que e uma instância da classe
+Métodos   - > são ações que podem ser realizadas por um objeo 
