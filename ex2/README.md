@@ -3,13 +3,13 @@
 a. É a forma de definir ou controlar a complexidade baseada em
 características essenciais e pela supressão ou desconsideração de
 detalhes em orientação a objetos  
-Abstração  
+- Abstração  
 b. Define que nenhum acesso direto é concedido diretamente aos dados,
 apenas através de métodos.  
-Encapsulamento  
+- Encapsulamento  
 c. É um recurso que serve para inicializar os atributos e é executado
 automaticamente sempre que um novo objeto é criado.  
-Construtor
+- Construtor
 
 #### Assinale V ou F:
 (F) Classes são instâncias de objetos;  
@@ -26,7 +26,7 @@ a. atributo, classe e objeto;
 b. classe, atributo e objeto;  
 c. classe, objeto e atributo;  
 d. objeto, atributo e classe;  
-e. objeto, classe e atributo.  
+- e. objeto, classe e atributo.  
 
 #### Dada a construção abaixo, associe os números ao elemento correspondente:
 let conta : Conta = new Conta();  
