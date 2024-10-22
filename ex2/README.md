@@ -2,7 +2,7 @@
 
 a. É a forma de definir ou controlar a complexidade baseada em
 características essenciais e pela supressão ou desconsideração de
-detalhes em orientação a objetos  
+detalhes em orientação a objetos
 - Abstração  
 b. Define que nenhum acesso direto é concedido diretamente aos dados,
 apenas através de métodos.  
