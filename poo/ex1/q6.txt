@@ -1,8 +1,0 @@
-seguindo o exemplo do jogo de volei , podemos ter o jogador 
-
-class Jogador {
-    private nome : string;
-    private posicao : string;
-    private habilidades : string[];
-    private estatisticas : number[];
-}

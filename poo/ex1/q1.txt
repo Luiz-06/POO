@@ -1,7 +1,0 @@
-    De um olhar mais macro, um objeto é criado a partir de uma classe. Portanto, é necessário ter uma classe com atributos e mé-
-todos, ou seja, características e atividades que podem ser realizadas com essas características. Por exemplo, considere a classe Carro. 
-Suponha que ela possui atributos como placa, cor e ano de fabricação. Quando criamos fusca = new Carro(), estamos criando um objeto 
-a partir da classe Carro. Esse carro (fusca) terá as características definidas na classe, ou seja, uma cor, um ano e uma placa.
-    A diferença entre uma classe e um objeto é que a classe é um modelo ou uma estrutura que define as propriedades e comportamentos, 
-enquanto um objeto é uma instância concreta dessa classe, com valores específicos para esses atributos. A classe serve como um molde
-para criar objetos, que são representações individuais.

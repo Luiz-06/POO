@@ -1,4 +1,0 @@
-Nao entendi muito bem a questao , pois os 5 mencionados ja sao os principais representantes de um sistema academico , porem ,
-vale ressaltar que ambos se conectam , assim como acontece em diagrama de entidade e relacionamento, pois dentro de professores 
-podemos ter a materia que eles ministram , dentro de materias podemos ter os alunos que cursam aquela materia , e dentro de alunos
-podemos ter as salas onde esses se encontram.
