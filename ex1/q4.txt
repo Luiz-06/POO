@@ -1,0 +1,2 @@
+a - > Sim , pois facilita para saber as informações pessoais sobre o titular da conta .
+b - > Sim , e esse atributo poderia ser um array , onde mostraria todas as contas daquela pessoa
