@@ -150,7 +150,8 @@ banco.inserirConta(conta2);
 banco.associarContaCliente(101, "123.456.789-00"); 
 banco.associarContaCliente(102, "987.654.321-00"); 
 
-console.log(banco.totalizarSaldoCliente("123.456.789-00")); // Exibe 500
+console.log(banco.totalizarSaldoCliente("123.456.789-00")); 
+
 
 
 
