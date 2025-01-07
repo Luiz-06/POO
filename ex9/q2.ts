@@ -1,27 +1,45 @@
-class Hora {
-    private horas: number;
-    private minutos: number;
-    private segundos: number;
+/*
+2. Crie uma classe Calculadora com:
+a. Dois tributos privados chamados representando dois operandos;
+b. Crie um construtor que inicializa os atributos;
+c. Crie um método que retorna a soma dos dois atributos;
+d. Teste a classe.
+*/
 
-    public definirHoras(h: number): void{
-        this.horas = h
-    }   
+class Calculadora {
+    private _operando1: number
+    private _operando2: number
 
-    public definirMinutos(m: number): void{
-        this.minutos = m 
+    constructor (operando1: number, operando2: number){
+        this._operando1 = operando1
+        this._operando2 = operando2
     }
 
-    public definirSegundos(s: number): void{
-        this.segundos = s
+    set operando1 (operando1: number){
+        this._operando1 = operando1
+    }
+    
+    set operando2 (operando2: number){
+        this._operando2 = operando2
     }
 
-    public horario(): string{
-        return `${this.horas}:${this.minutos}:${this.segundos}`
+    get operando1 (): number{
+        return this._operando1
+    }
+
+    get operando2 (): number{
+        return this._operando2
+    }
+
+    public somar (): number{
+        return this._operando1 + this._operando2
     }
 }
 
-const relogioDoBen10 = new Hora()
-relogioDoBen10.definirHoras(12)
-relogioDoBen10.definirMinutos(40)
-relogioDoBen10.definirSegundos(30)
-relogioDoBen10.horario()
+const teste1 = new Calculadora(1, 2)
+console.log(teste1.somar())  // saída: 3
+
+teste1.operando1 = 5  // Alterando operando1
+teste1.operando2 = 5  // Alterando operando2
+console.log(teste1.somar())  // saída: 10
+

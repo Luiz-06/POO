@@ -1,24 +1,82 @@
-class Calculadora {
-    operando1: number;
-    private operando2: number;
-    
-    constructor(n1: number, n2: number) {
-        this.operando1 = n1; 
-        this.operando2 = n2
+/*
+1. As classes Carro, Veiculo e CarroEletrico são bem semelhantes. Reescreva as
+classes usando herança para que os atributos duplicados não sejam mais
+necessários.
+
+class Veiculo {
+placa: String;
+ano: number;
+}
+
+class Carro {
+placa: String;
+ano: number;
+modelo: String;
+}
+
+class CarroEletrico {
+placa: String;
+ano: number;
+modelo: String;
+autonomiaBateria:
+*/
+
+class Veiculo {
+    private _placa: string
+    private _ano: number
+
+    constructor(placa: string, ano: number) {
+        this._placa = placa
+        this._ano = ano
     }
 
-    public somar(): number {
-        return this.operando1 + this.operando2
+    set placa(placa: string) {
+        this._placa = placa
     }
 
-    public subtrair(): number {
-        return this.operando1 - this.operando2
+    get placa(): string {
+        return this._placa
+    }
+
+    set ano(ano: number) {
+        this._ano = ano
+    }
+
+    get ano(): number {
+        return this._ano
     }
 }
 
-const abaco = new Calculadora(2, 3)
-abaco.somar()
-abaco.subtrair()
-abaco.operando1
-//abago.operando2 -> não da certo , pois diferente de operando1 (que nao possui restrições)
-//operando2 possui a restrição "private"
+class Carro extends Veiculo {
+    private _modelo: string
+
+    constructor(placa: string, ano: number, modelo: string) {
+        super(placa, ano)
+        this._modelo = modelo
+    }
+
+    set modelo(modelo: string) {
+        this._modelo = modelo
+    }
+
+    get modelo(): string {
+        return this._modelo
+    }
+}
+
+class CarroEletrico extends Carro {
+    private _autonomiaBateria: number
+
+    constructor(placa: string, ano: number, modelo: string, autonomiaBateria: number) {
+        super(placa, ano, modelo)
+        this._autonomiaBateria = autonomiaBateria
+    }
+
+    set autonomiaBateria(autonomiaBateria: number) {
+        this._autonomiaBateria = autonomiaBateria
+    }
+
+    get autonomiaBateria(): number {
+        return this._autonomiaBateria
+    }
+}
