@@ -16,9 +16,9 @@ class Calculadora {
     }
 }
 
-const abago = new Calculadora(2, 3)
-abago.somar()
-abago.subtrair()
-abago.operando1
+const abaco = new Calculadora(2, 3)
+abaco.somar()
+abaco.subtrair()
+abaco.operando1
 //abago.operando2 -> não da certo , pois diferente de operando1 (que nao possui restrições)
 //operando2 possui a restrição "private"
